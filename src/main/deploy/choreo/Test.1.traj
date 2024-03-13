@@ -1,0 +1,239 @@
+{
+  "samples": [
+    {
+      "x": 2.4507620334625244,
+      "y": 6.218921184539795,
+      "heading": 0,
+      "angularVelocity": 0,
+      "velocityX": -3.723052138511917e-20,
+      "velocityY": 0,
+      "timestamp": 0
+    },
+    {
+      "x": 2.5038629169278743,
+      "y": 6.218921184539795,
+      "heading": 0,
+      "angularVelocity": 0,
+      "velocityX": 0.6435767937351872,
+      "velocityY": 0,
+      "timestamp": 0.08250900899823241
+    },
+    {
+      "x": 2.61006468132937,
+      "y": 6.218921184539795,
+      "heading": 0,
+      "angularVelocity": 0,
+      "velocityX": 1.2871535568167018,
+      "velocityY": 0,
+      "timestamp": 0.16501801799646482
+    },
+    {
+      "x": 2.76936732174079,
+      "y": 6.218921184539795,
+      "heading": 0,
+      "angularVelocity": 0,
+      "velocityX": 1.9307302601929428,
+      "velocityY": 0,
+      "timestamp": 0.24752702699469722
+    },
+    {
+      "x": 2.9817708243621617,
+      "y": 6.218921184539795,
+      "heading": 0,
+      "angularVelocity": 0,
+      "velocityX": 2.5743067963150805,
+      "velocityY": 0,
+      "timestamp": 0.33003603599292963
+    },
+    {
+      "x": 3.247274925148224,
+      "y": 6.218921184539795,
+      "heading": 0,
+      "angularVelocity": 0,
+      "velocityX": 3.2178801322380473,
+      "velocityY": 0,
+      "timestamp": 0.41254504499116207
+    },
+    {
+      "x": 3.459678170944458,
+      "y": 6.218921184539795,
+      "heading": 0,
+      "angularVelocity": 0,
+      "velocityX": 2.5743036836230146,
+      "velocityY": 0,
+      "timestamp": 0.4950540539893945
+    },
+    {
+      "x": 3.6189805425192834,
+      "y": 6.218921184539795,
+      "heading": 0,
+      "angularVelocity": 0,
+      "velocityX": 1.9307270019233695,
+      "velocityY": 0,
+      "timestamp": 0.5775630629876269
+    },
+    {
+      "x": 3.725182033951514,
+      "y": 6.218921184539795,
+      "heading": 0,
+      "angularVelocity": 0,
+      "velocityX": 1.2871502484596011,
+      "velocityY": 0,
+      "timestamp": 0.6600720719858594
+    },
+    {
+      "x": 3.778282642364502,
+      "y": 6.218921184539795,
+      "heading": 0,
+      "angularVelocity": 0,
+      "velocityX": 0.6435734601311957,
+      "velocityY": 0,
+      "timestamp": 0.7425810809840918
+    },
+    {
+      "x": 3.764581447154139,
+      "y": 6.218921184539795,
+      "heading": 0,
+      "angularVelocity": 0,
+      "velocityX": -0.1369257184533001,
+      "velocityY": 0,
+      "timestamp": 0.842644059401374
+    },
+    {
+      "x": 3.6727811834921087,
+      "y": 6.218921184539795,
+      "heading": 0,
+      "angularVelocity": 0,
+      "velocityX": -0.9174248569656257,
+      "velocityY": 0,
+      "timestamp": 0.9427070378186562
+    },
+    {
+      "x": 3.5028818634076213,
+      "y": 6.218921184539795,
+      "heading": 0,
+      "angularVelocity": 0,
+      "velocityX": -1.69792387526158,
+      "velocityY": 0,
+      "timestamp": 1.0427700162359383
+    },
+    {
+      "x": 3.2685846660721967,
+      "y": 6.218921184539795,
+      "heading": 0,
+      "angularVelocity": 0,
+      "velocityX": -2.3414973353917135,
+      "velocityY": 0,
+      "timestamp": 1.1428329946532205
+    },
+    {
+      "x": 3.112386525159152,
+      "y": 6.218921184539795,
+      "heading": 0,
+      "angularVelocity": 0,
+      "velocityX": -1.5609983170965371,
+      "velocityY": 0,
+      "timestamp": 1.2428959730705027
+    },
+    {
+      "x": 3.034287452697754,
+      "y": 6.218921184539795,
+      "heading": 0,
+      "angularVelocity": 0,
+      "velocityX": -0.7804991785844079,
+      "velocityY": 0,
+      "timestamp": 1.3429589514877849
+    },
+    {
+      "x": 3.034287452697754,
+      "y": 6.218921184539795,
+      "heading": 0,
+      "angularVelocity": 0,
+      "velocityX": -5.140418440739846e-20,
+      "velocityY": 0,
+      "timestamp": 1.443021929905067
+    }
+  ],
+  "eventMarkers": [
+    {
+      "timestamp": 0,
+      "command": {
+        "type": "sequential",
+        "data": {
+          "commands": [
+            {
+              "type": "named",
+              "data": {
+                "name": "Zero Gyro"
+              }
+            },
+            {
+              "type": "named",
+              "data": {
+                "name": "Shoot"
+              }
+            },
+            {
+              "type": "named",
+              "data": {
+                "name": "Indexer Up"
+              }
+            },
+            {
+              "type": "named",
+              "data": {
+                "name": "Indexer Down"
+              }
+            },
+            {
+              "type": "named",
+              "data": {
+                "name": "Indexer Stop"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "timestamp": 1.143021929905067,
+      "command": {
+        "type": "sequential",
+        "data": {
+          "commands": [
+            {
+              "type": "named",
+              "data": {
+                "name": "Indexer Up"
+              }
+            },
+            {
+              "type": "named",
+              "data": {
+                "name": "Indexer Down"
+              }
+            },
+            {
+              "type": "named",
+              "data": {
+                "name": "Indexer Stop"
+              }
+            },
+            {
+              "type": "named",
+              "data": {
+                "name": "Intake Stop"
+              }
+            },
+            {
+              "type": "named",
+              "data": {
+                "name": "Shooter Stop"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

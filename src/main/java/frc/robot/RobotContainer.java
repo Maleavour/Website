@@ -66,7 +66,7 @@ public class RobotContainer
 PathPlannerPath DSRTest = PathPlannerPath.fromChoreoTrajectory("DSR");
 PathPlannerPath DSFTest = PathPlannerPath.fromChoreoTrajectory("DSF");
 PathPlannerPath DSLTest = PathPlannerPath.fromChoreoTrajectory("DSL");
-PathPlannerPath Test = PathPlannerPath.fromChoreoTrajectory("Test");
+
   // The robot's subsystems and commands are defined here...
   private final SwerveSubsystem drivebase;
   public final SendableChooser<Command> AUTO_CHOOSER;

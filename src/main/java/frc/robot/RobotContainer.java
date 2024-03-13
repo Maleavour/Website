@@ -185,48 +185,48 @@ PathPlannerPath DSLTest = PathPlannerPath.fromChoreoTrajectory("DSL");
     return new InstantCommand(() -> {
       robot.TopShooter.set(Robot.shooter_reverse);
       robot.BottomShooter.set(Robot.shooter_reverse);
-    }).andThen(new WaitCommand(1));
+    }).andThen(new WaitCommand(0.2));
   }
   
   public Command zeroGyro() 
   {
     return new InstantCommand(() -> {
       Commands.runOnce(drivebase::zeroGyro);
-    }).andThen(new WaitCommand(1));
+    }).andThen(new WaitCommand(0.2));
   }
 
    public Command intake() 
   {
     return new InstantCommand(() -> {
       robot.Intake.set(-Robot.intake_power);
-    }).andThen(new WaitCommand(1));
+    }).andThen(new WaitCommand(0.2));
   }
 
   public Command IndexerUp() 
   {
     return new InstantCommand(() -> {
       robot.Indexer.set(Robot.Indexer_power);
-    }).andThen(new WaitCommand(1));
+    }).andThen(new WaitCommand(0.2));
   }
   public Command IndexerDown() 
   {
     return new InstantCommand(() -> {
       robot.Indexer.set(Robot.Indexer_reverse);
-    }).andThen(new WaitCommand(1));
+    }).andThen(new WaitCommand(0.2));
   }
 
   public Command IndexerStop() 
   {
     return new InstantCommand(() -> {
       robot.Indexer.set(Robot.generic_stop);
-    }).andThen(new WaitCommand(1));
+    }).andThen(new WaitCommand(0.2));
   }
 
   public Command intakeStop() 
   {
     return new InstantCommand(() -> {
       robot.Intake.set(Robot.generic_stop);
-    }).andThen(new WaitCommand(1));
+    }).andThen(new WaitCommand(0.2));
   }
 
   public Command ShooterStop() 
@@ -234,7 +234,7 @@ PathPlannerPath DSLTest = PathPlannerPath.fromChoreoTrajectory("DSL");
     return new InstantCommand(() -> {
       robot.TopShooter.set(Robot.generic_stop);
       robot.BottomShooter.set(Robot.generic_stop);
-    }).andThen(new WaitCommand(1));
+    }).andThen(new WaitCommand(0.2));
   }
 
   public void setDriveMode()

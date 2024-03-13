@@ -2,15 +2,21 @@
   "version": 1.0,
   "startingPose": {
     "position": {
-      "x": 1.429592490196228,
-      "y": 5.528106212615967
+      "x": 1.36086297850199,
+      "y": 5.562647359246215
     },
-    "rotation": -5.722879116104448e-26
+    "rotation": 0
   },
   "command": {
     "type": "sequential",
     "data": {
       "commands": [
+        {
+          "type": "named",
+          "data": {
+            "name": "Shoot"
+          }
+        },
         {
           "type": "path",
           "data": {
@@ -20,6 +26,6 @@
       ]
     }
   },
-  "folder": null,
+  "folder": "BlueAlliance",
   "choreoAuto": true
 }

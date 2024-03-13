@@ -1,157 +1,85 @@
 {
   "samples": [
     {
-      "x": 2.4507620334625244,
-      "y": 6.218921184539795,
+      "x": 2.620187997817993,
+      "y": 6.364769458770752,
       "heading": 0,
       "angularVelocity": 0,
-      "velocityX": -3.723052138511917e-20,
+      "velocityX": -1.4466353371227334e-19,
       "velocityY": 0,
       "timestamp": 0
     },
     {
-      "x": 2.5038629169278743,
-      "y": 6.218921184539795,
+      "x": 2.6836135447851546,
+      "y": 6.364769458770752,
       "heading": 0,
       "angularVelocity": 0,
-      "velocityX": 0.6435767937351872,
+      "velocityX": 0.7033663991877793,
       "velocityY": 0,
-      "timestamp": 0.08250900899823241
+      "timestamp": 0.0901742634285671
     },
     {
-      "x": 2.61006468132937,
-      "y": 6.218921184539795,
+      "x": 2.8104646354976,
+      "y": 6.364769458770752,
       "heading": 0,
       "angularVelocity": 0,
-      "velocityX": 1.2871535568167018,
+      "velocityX": 1.406732762633853,
       "velocityY": 0,
-      "timestamp": 0.16501801799646482
+      "timestamp": 0.1803485268571342
     },
     {
-      "x": 2.76936732174079,
-      "y": 6.218921184539795,
+      "x": 3.0007412624320065,
+      "y": 6.364769458770752,
       "heading": 0,
       "angularVelocity": 0,
-      "velocityX": 1.9307302601929428,
+      "velocityX": 2.1100990426826285,
       "velocityY": 0,
-      "timestamp": 0.24752702699469722
+      "timestamp": 0.2705227902857013
     },
     {
-      "x": 2.9817708243621617,
-      "y": 6.218921184539795,
+      "x": 3.2544433879895016,
+      "y": 6.364769458770752,
       "heading": 0,
       "angularVelocity": 0,
-      "velocityX": 2.5743067963150805,
+      "velocityX": 2.813464905745133,
       "velocityY": 0,
-      "timestamp": 0.33003603599292963
+      "timestamp": 0.3606970537142684
     },
     {
-      "x": 3.247274925148224,
-      "y": 6.218921184539795,
+      "x": 3.44472001492194,
+      "y": 6.364769458770752,
       "heading": 0,
       "angularVelocity": 0,
-      "velocityX": 3.2178801322380473,
+      "velocityX": 2.1100990426826263,
       "velocityY": 0,
-      "timestamp": 0.41254504499116207
+      "timestamp": 0.4508713171428355
     },
     {
-      "x": 3.459678170944458,
-      "y": 6.218921184539795,
+      "x": 3.571571105635801,
+      "y": 6.364769458770752,
       "heading": 0,
       "angularVelocity": 0,
-      "velocityX": 2.5743036836230146,
+      "velocityX": 1.4067327626338495,
       "velocityY": 0,
-      "timestamp": 0.4950540539893945
+      "timestamp": 0.5410455805714026
     },
     {
-      "x": 3.6189805425192834,
-      "y": 6.218921184539795,
+      "x": 3.6349966526031494,
+      "y": 6.364769458770752,
       "heading": 0,
       "angularVelocity": 0,
-      "velocityX": 1.9307270019233695,
+      "velocityX": 0.7033663991877753,
       "velocityY": 0,
-      "timestamp": 0.5775630629876269
+      "timestamp": 0.6312198439999697
     },
     {
-      "x": 3.725182033951514,
-      "y": 6.218921184539795,
+      "x": 3.6349966526031494,
+      "y": 6.364769458770752,
       "heading": 0,
       "angularVelocity": 0,
-      "velocityX": 1.2871502484596011,
+      "velocityX": -2.4355138568972745e-19,
       "velocityY": 0,
-      "timestamp": 0.6600720719858594
-    },
-    {
-      "x": 3.778282642364502,
-      "y": 6.218921184539795,
-      "heading": 0,
-      "angularVelocity": 0,
-      "velocityX": 0.6435734601311957,
-      "velocityY": 0,
-      "timestamp": 0.7425810809840918
-    },
-    {
-      "x": 3.764581447154139,
-      "y": 6.218921184539795,
-      "heading": 0,
-      "angularVelocity": 0,
-      "velocityX": -0.1369257184533001,
-      "velocityY": 0,
-      "timestamp": 0.842644059401374
-    },
-    {
-      "x": 3.6727811834921087,
-      "y": 6.218921184539795,
-      "heading": 0,
-      "angularVelocity": 0,
-      "velocityX": -0.9174248569656257,
-      "velocityY": 0,
-      "timestamp": 0.9427070378186562
-    },
-    {
-      "x": 3.5028818634076213,
-      "y": 6.218921184539795,
-      "heading": 0,
-      "angularVelocity": 0,
-      "velocityX": -1.69792387526158,
-      "velocityY": 0,
-      "timestamp": 1.0427700162359383
-    },
-    {
-      "x": 3.2685846660721967,
-      "y": 6.218921184539795,
-      "heading": 0,
-      "angularVelocity": 0,
-      "velocityX": -2.3414973353917135,
-      "velocityY": 0,
-      "timestamp": 1.1428329946532205
-    },
-    {
-      "x": 3.112386525159152,
-      "y": 6.218921184539795,
-      "heading": 0,
-      "angularVelocity": 0,
-      "velocityX": -1.5609983170965371,
-      "velocityY": 0,
-      "timestamp": 1.2428959730705027
-    },
-    {
-      "x": 3.034287452697754,
-      "y": 6.218921184539795,
-      "heading": 0,
-      "angularVelocity": 0,
-      "velocityX": -0.7804991785844079,
-      "velocityY": 0,
-      "timestamp": 1.3429589514877849
-    },
-    {
-      "x": 3.034287452697754,
-      "y": 6.218921184539795,
-      "heading": 0,
-      "angularVelocity": 0,
-      "velocityX": -5.140418440739846e-20,
-      "velocityY": 0,
-      "timestamp": 1.443021929905067
+      "timestamp": 0.7213941074285368
     }
   ],
   "eventMarkers": [
@@ -176,19 +104,7 @@
             {
               "type": "named",
               "data": {
-                "name": "Indexer Up"
-              }
-            },
-            {
-              "type": "named",
-              "data": {
-                "name": "Indexer Down"
-              }
-            },
-            {
-              "type": "named",
-              "data": {
-                "name": "Indexer Stop"
+                "name": "Intake"
               }
             }
           ]
@@ -196,7 +112,7 @@
       }
     },
     {
-      "timestamp": 1.143021929905067,
+      "timestamp": 0.7213941074285368,
       "command": {
         "type": "sequential",
         "data": {
@@ -204,19 +120,7 @@
             {
               "type": "named",
               "data": {
-                "name": "Indexer Up"
-              }
-            },
-            {
-              "type": "named",
-              "data": {
-                "name": "Indexer Down"
-              }
-            },
-            {
-              "type": "named",
-              "data": {
-                "name": "Indexer Stop"
+                "name": "Shooter Stop"
               }
             },
             {
@@ -228,7 +132,7 @@
             {
               "type": "named",
               "data": {
-                "name": "Shooter Stop"
+                "name": "Zero Gyro"
               }
             }
           ]

@@ -1,0 +1,233 @@
+/* Reset default margin and padding */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #333; /* Set dark background color */
+  color: white; /* Set text color */
+  font-family: Arial, sans-serif;
+}
+
+/* Basic styling for the navigation menu */
+nav {
+  position: fixed;
+  top: 80px; /* Adjust top position to leave space for the title */
+  left: 0;
+  width: 100%;
+  background-color: #222; /* Dark background color */
+  overflow: hidden;
+  text-align: center; /* Center-align menu options */
+  z-index: 1000; /* Ensure the menu is above other content */
+  transition: top 0.3s; /* Add smooth transition effect */
+}
+
+nav a {
+  display: inline-block; /* Display menu options in a row */
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #464343; /* Darker background color on hover */
+}
+
+/* Style for the blank content area */
+.content {
+  padding: 20px;
+  background-color: #333; /* Darker background color for content area */
+  color: white; /* Text color for content area */
+  margin-top: 160px; /* Adjust margin to avoid overlapping with the fixed navigation menu */
+  box-sizing: border-box; /* Include padding and border in the height calculation */
+  z-index: 0; /* Ensure the content is below other elements */
+}
+
+/* Style for the title */
+.title {
+  font-size: 40pt; /* Larger font size */
+  text-align: center;
+  padding: 20px 0; /* Add padding to the top and bottom */
+  margin: 0;
+  color: #860505; /* Set color to mix between dark purple and dark blue */
+  text-shadow: 2px 2px 4px #000000; /* Add shadow effect */
+  z-index: 1000; /* Ensure the title is above other content */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #222; /* Dark background color */
+  transition: top 0.3s; /* Add smooth transition effect */
+}
+
+/* Add class to move title and menu out of view when scrolling */
+.scrolled {
+  top: -100px; /* Move title and menu out of view */
+}
+
+/* Style for the overlay */
+.overlay {
+  display: none; /* Initially hidden */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  z-index: 9999; /* Ensure overlay is above other content */
+  overflow-y: auto; /* Enable vertical scrolling */
+  transition: opacity 0.3s ease-in-out; /* Fade-in and fade-out transition */
+  opacity: 0; /* Start with opacity 0 */
+}
+
+.overlay-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1000; /* Width of the overlay */
+  max-width: calc(100% - 40px); /* Maximum width for responsiveness */
+  overflow-y: auto; /* Enable vertical scrolling */
+  background-color: #222; /* Background color of the overlay */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Shadow effect */
+  padding: 20px; /* Add padding */
+  height: 100vh; /* Set height to viewport height */
+  max-height: calc(100vh - 100px); /* Set maximum height for scrolling */
+  opacity: 0; /* Start with opacity 0 */
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; /* Fade-in and slide-in transition */
+  transform-origin: center; /* Set transform origin to center */
+  transform: translate(-50%, -50%) scale(0.5); /* Start with small size */
+}
+.overlay.active {
+  display: block; /* Show the overlay */
+  opacity: 1; /* Fade-in effect */
+}
+
+.overlay-content.active {
+  opacity: 1; /* Fade-in effect */
+  transform: translate(-50%, -50%) scale(1); /* Expand to full size */
+}
+
+/* Style for the button */
+.button-container {
+  text-align: center;
+  margin-top: 50px; /* Adjust as needed */
+}
+
+.button-container button {
+  background-color: transparent; /* Transparent background */
+  border: none; /* No border */
+  color: white; /* White text color */
+  padding: 14px 20px; /* Padding */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Cursor style */
+}
+
+.button-container button:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background on hover */
+}
+
+/* Style for the exit button */
+.exit-button {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  background-color: transparent; /* Transparent background */
+  border: none; /* No border */
+  color: white; /* White text color */
+  font-size: 24px; /* Font size increased */
+  line-height: 30px; /* Center the text vertically */
+  padding: 10px; /* Equal padding */
+  cursor: pointer; /* Cursor style */
+}
+
+.exit-button:hover {
+  color: #ff5555; /* Change color on hover */
+}
+
+/* Style for the video container */
+.video-container {
+  position: relative;
+  width: 95%; /* Adjust the width as needed */
+  margin: 0 auto; /* Center the container horizontally */
+  padding-top: 50%; /* Aspect ratio (height: 9/16 * 100) */
+  top: 25px; /* Adjust the top position to move the frame down */
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Style for the video title */
+.video-title {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 35px;
+  padding: 10px 20px; /* Adds padding to the title */
+  background-color: #222; /* Dark background color */
+  color: white; /* White text color */
+  border-radius: 5px; /* Rounded corners */
+  width: fit-content; /* Adjusts width to fit content */
+  margin-left: 5px; /* Left margin */
+  margin-right: 40px; /* Right margin */
+  font-family: Verdana, Geneva, Tahoma, sans-serif, Arial; /* Default font style */
+}
+
+/* Style for the description container */
+.description-container {
+  position: relative;
+}
+
+/* Style for the description initially */
+.description {
+  margin: 20px auto; /* Add margin to center vertically and horizontally */
+  padding: 20px; /* Add padding for content */
+  background-color: #222; /* Dark background color */
+  color: white; /* Text color */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Shadow effect */
+  font-family: Arial, sans-serif; /* Font style */
+  width: 91%; /* Set width to 95% */
+  height: 100px; /* Initial height */
+  overflow: hidden; /* Hide overflow */
+  transition: height 0.3s; /* Add transition for smooth expansion/collapse */
+}
+
+/* Expanded style for the description */
+.description.expanded {
+  height: auto; /* Auto height for dynamic content */
+}
+
+/* Style for the "Read more" button */
+.read-more-btn {
+  position: absolute;
+  bottom: -30px; /* Adjust as needed */
+  left: 24px; /* Move the button 1px to the right */
+  background-color: #464646; /* Dark grey background color */
+  border: none;
+  color: white;
+  padding: 5px 10px; /* Adjust padding */
+  font-size: 14px; /* Adjust font size */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer;
+  z-index: 1; /* Ensure it's above the rectangle */
+}
+
+
+
+/* Style for the separate rectangle */
+.button-rectangle {
+  position: absolute;
+  bottom: -40px; /* Adjust as needed */
+  left: 0;
+  width: 100%; /* Same width as the description */
+  height: 40px; /* Height of the rectangle */
+  background-color: #222; /* Dark background color */
+  border-radius: 5px 5px 0 0; /* Rounded corners, except at the top */
+  z-index: -1; /* Ensure it's behind the button and text */
+}

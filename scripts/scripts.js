@@ -2,25 +2,43 @@
 var videoElement = document.getElementById('video-player1'); // Replace 'yourVideoId' with the actual ID of your video element
 var currentTime = 0;
 
-// Function to open the overlay and scroll to the top
-function openOverlay() {
-  // Show the overlay
-  var overlay = document.getElementById('overlay');
-  overlay.classList.add('active');
-  
-  // Show the overlay content with animation
-  var overlayContent = document.querySelector('.overlay-content');
-  overlayContent.classList.add('active');
-  
-  // Scroll to the top of the overlay
-  window.scrollTo(0, 0);
 
-  // Update the drop-down button text and options
-  var dropDownBtn = document.getElementById('dropDownBtn');
-  dropDownBtn.textContent = 'v - Open Overlay'; // Change text when overlay is open
-  var dropdownContent = document.getElementById('dropdownContent');
-  dropdownContent.style.display = 'block'; // Show dropdown options
-}
+// Function to toggle the sidebar
+function toggleSidebar() {
+    var sidebar = document.getElementById('sidebar');
+    sidebar.classList.toggle('active');
+  }
+  
+  // Function to change the video in the iframe
+  function changeVideo(videoUrl) {
+    var videoPlayer = document.getElementById('videoPlayer');
+    videoPlayer.src = videoUrl;
+    document.getElementById('sidebar').classList.remove('active');
+  }
+  
+  // Function to open the overlay (you can add your existing function here)
+  function openOverlay() {
+    // Show the overlay
+    var overlay = document.getElementById('overlay');
+    overlay.classList.add('active');
+    
+    // Show the overlay content with animation
+    var overlayContent = document.querySelector('.overlay-content');
+    overlayContent.classList.add('active');
+    
+    // Scroll to the top of the overlay
+    window.scrollTo(0, 0);
+  
+    // Update the drop-down button text and options
+    var dropDownBtn = document.getElementById('dropDownBtn');
+    dropDownBtn.textContent = 'v - Open Overlay'; // Change text when overlay is open
+    var dropdownContent = document.getElementById('dropdownContent');
+    dropdownContent.style.display = 'block'; // Show dropdown options
+  }
+  
+
+// Function to open the overlay and scroll to the top
+
 
 // Function to close the overlay and pause the video
 function closeOverlay() {
@@ -60,45 +78,8 @@ function toggleDescription() {
     }
 }
 
-// Function to resume video playback when overlay is reopened
-function resumePlayback() {
-    // Set the playback time of the video to the stored value
-    videoElement.currentTime = currentTime;
-    
-    // Play the video
-    videoElement.play();
-}
 
-// Function to toggle the visibility of the button container
-function toggleButtonContainer() {
-    var buttonContainer = document.getElementById('buttonContainer');
-    buttonContainer.style.display = (buttonContainer.style.display === 'block') ? 'none' : 'block';
-    toggleDropdownName();
-}
 
-// Function to toggle the visibility of button container 2
-function toggleButtonContainer2() {
-    var buttonContainer2 = document.getElementById('buttonContainer2');
-    buttonContainer2.style.display = (buttonContainer2.style.display === 'block') ? 'none' : 'block';
-    toggleDropdownName2();
-}
 
-// Function to open the second overlay
-function openOverlay2() {
-    // Show the overlay
-    var overlay2 = document.getElementById('overlay2');
-    overlay2.classList.add('active');
-    
-    // Show the overlay content with animation
-    var overlayContent2 = document.querySelector('.overlay-content2');
-    overlayContent2.classList.add('active');
-    
-    // Scroll to the top of the overlay
-    window.scrollTo(0, 0);
 
-    // Update the drop-down button text and options
-    var dropDownBtn2 = document.getElementById('dropDownBtn2');
-    dropDownBtn2.textContent = 'v - Open Overlay'; // Change text when overlay is open
-    var dropdownContent2 = document.getElementById('dropdownContent2');
-    dropdownContent2.style.display = 'block'; // Show dropdown options
-}
+

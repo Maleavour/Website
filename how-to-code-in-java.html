@@ -18,84 +18,44 @@
     <a href="another-example.html">Another Example</a>
 </nav>
 
-<!-- Blank Content Area -->
-<div class="content">
-  <div class="dropdown" id="Dropdown">
-    <button id="Dropdown-btn" class="dropdown-btn" onclick="toggleButtonContainer()">General Knowledge</button>
-    <!-- Button to open overlay -->
-    <div id="buttonContainer" class="button-container">
-      <button onclick="openOverlay()">Open Overlay</button>
+<!-- Button to open overlay -->
+<div id="buttonContainer" class="button-container">
+  <button onclick="openOverlay()">Click to Open</button>
+</div>
+
+<!-- Overlay Container -->
+<div class="overlay" id="overlay">
+  <!-- Overlay content area -->
+  <div class="overlay-content">
+    <!-- Exit button -->
+    <button class="exit-button" onclick="closeOverlay()">x</button>
+    <!-- YouTube video -->
+    <div class="video-container">
+      <iframe id="videoPlayer" width="560" height="315" src="https://www.youtube.com/embed/6Uhgm-A8C3o?si=OfErzHqE8R-VwEqh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <img id="changeVideoBtn" class="change-video-btn" src="images/menu.png" alt="Change Video" onclick="toggleSidebar()">
     </div>
-  </div>
-
-  <!-- Additional dropdown buttons -->
-  <div class="dropdown" id="Dropdown2">
-    <button id="Dropdown-btn2" class="dropdown-btn" onclick="toggleButtonContainer2()">General Knowledge 2</button>
-    <!-- Button to open overlay -->
-    <div id="buttonContainer2" class="button-container">
-        <button onclick="openOverlay2()">Open Overlay 2</button>
+    <!-- Sidebar with video buttons -->
+    <div id="sidebar" class="sidebar">
+      <button onclick="changeVideo('https://www.youtube.com/embed/6Uhgm-A8C3o?si=OfErzHqE8R-VwEqh')">Video 1</button>
+      <button onclick="changeVideo('https://www.youtube.com/embed/6Uhgm-A8C3o?si=OfErzHqE8R-VwEqh')">Video 2</button>
+      <button onclick="changeVideo('https://www.youtube.com/embed/6Uhgm-A8C3o?si=OfErzHqE8R-VwEqh')">Video 3</button>
     </div>
-  </div>
-
-  
-
-  
-<!---------------------------------------------------------------------------------------------------------------------->
-<!-- beginning of the overlay -->
-  <!-- Overlay Container -->
-  <div class="overlay" id="overlay">
-    <!-- Overlay content area -->
-    <div class="overlay-content">
-      <!-- Exit button -->
-      <button class="exit-button" onclick="closeOverlay()">x</button>
-      <!-- YouTube video -->
-      <div class="video-container">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/6Uhgm-A8C3o?si=OfErzHqE8R-VwEqh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class="video-title">The Burger Bots - Official Trailer</div>
+    <!-- Description section -->
+    <div class="description-container">
+      <div class="description" id="description">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vehicula mauris id pulvinar. Integer nec lacus quis ex viverra scelerisque. Fusce nec dui vel justo tincidunt convallis. Sed fringilla sapien ut libero malesuada, vitae viverra mi tempus. Ut efficitur urna quis dui sollicitudin vestibulum. In hac habitasse platea dictumst.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vehicula mauris id pulvinar. Integer nec lacus quis ex viverra scelerisque. Fusce nec dui vel justo tincidunt convallis. Sed fringilla sapien ut libero malesuada, vitae viverra mi tempus. Ut efficitur urna quis dui sollicitudin vestibulum. In hac habitasse platea dictumst.</p>
+        <!-- "Read more" button -->
+        <div id="showMoreBtn" class="read-more-btn" onclick="toggleDescription()">Read more</div>
       </div>
-      <div class="video-title">The Burger Bots - Official Trailer</div>
-      <!-- Description section -->
-      <div class="description-container">
-        <div class="description" id="description">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vehicula mauris id pulvinar. Integer nec lacus quis ex viverra scelerisque. Fusce nec dui vel justo tincidunt convallis. Sed fringilla sapien ut libero malesuada, vitae viverra mi tempus. Ut efficitur urna quis dui sollicitudin vestibulum. In hac habitasse platea dictumst.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vehicula mauris id pulvinar. Integer nec lacus quis ex viverra scelerisque. Fusce nec dui vel justo tincidunt convallis. Sed fringilla sapien ut libero malesuada, vitae viverra mi tempus. Ut efficitur urna quis dui sollicitudin vestibulum. In hac habitasse platea dictumst.</p>
-          <!-- "Read more" button -->
-          <div id="showMoreBtn" class="read-more-btn" onclick="toggleDescription()">Read more</div>
-        </div>
-        <div class="button-rectangle"></div>
-      </div>
-      <div id="disqus_thread"></div>
+      <div class="button-rectangle"></div>
     </div>
+    <div id="disqus_thread"></div>
   </div>
-
-  <!-- Other Overlay Containers -->
-  <!-- Please replace the iframe source with your desired content for each overlay -->
-  <!-- Overlay 2 -->
-  <div class="overlay2" id="overlay2">
-    <div class="overlay-content2">
-      <button class="exit-button2" onclick="closeOverlay2()">x</button>
-      <div class="video-container2">
-        <iframe id="video-player2" width="560" height="315" src="https://www.youtube.com/embed/your-video-id2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-      </div>
-      <div class="video-title2">Your Video Title 2</div>
-      <div class="description-container2">
-        <div class="description2" id="description2">
-          <!-- Your content here -->
-        </div>
-        <div class="button-rectangle2"></div>
-      </div>
-      <div id="disqus_thread2"></div>
-    </div>
-  </div>
-
- 
-
-
-  <!-- Repeat the structure for overlays 3 to 15 as needed -->
-
 </div>
 
 <script src="scripts/scripts.js"></script> <!-- Link to the JavaScript file -->
-<script src="https://www.youtube.com/iframe_api"></script>
 
 </body>
 </html>

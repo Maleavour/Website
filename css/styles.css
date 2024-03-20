@@ -63,6 +63,56 @@ nav a:hover {
   top: -100px; /* Move title and menu out of view */
 }
 
+/* Style for the button container */
+.button-container {
+  position: absolute;
+  top: 130%; /* Position below the dropdown */
+  left: 10%; /* Center horizontally */
+  transform: translateX(-50%); /* Move back 50% of its own width */
+  width: 200px; /* Set a fixed width or adjust as needed */
+  display: none; /* Initially hidden */
+}
+
+
+
+
+.button-container button {
+  background-color: #464646; /* Dark grey background color */
+  border: none;
+  color: white;
+  padding: 10px 20px; /* Adjust padding */
+  font-size: 12px; /* Adjust font size */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer;
+}
+
+.button-container button:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background on hover */
+}
+
+.dropdown {
+  position: relative;
+  
+}
+
+.dropdown-btn {
+
+  background-color: #464646; /* Dark grey background color */
+  border: none;
+  color: rgba(255, 255, 255, 0.74);
+  padding: 10px 20px; /* Adjust padding */
+  font-size: 16px; /* Adjust font size */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer;
+  width: 15%;
+
+}
+
+.button-container:hover {
+  background-color: rgba(0, 0, 0, 0); /* Darker background color on hover */
+}
+
+/* beginning of the overlay content*/
 /* Style for the overlay */
 .overlay {
   display: none; /* Initially hidden */
@@ -107,24 +157,7 @@ nav a:hover {
   transform: translate(-50%, -50%) scale(1); /* Expand to full size */
 }
 
-/* Style for the button */
-.button-container {
-  text-align: center;
-  margin-top: 50px; /* Adjust as needed */
-}
 
-.button-container button {
-  background-color: transparent; /* Transparent background */
-  border: none; /* No border */
-  color: white; /* White text color */
-  padding: 14px 20px; /* Padding */
-  font-size: 16px; /* Font size */
-  cursor: pointer; /* Cursor style */
-}
-
-.button-container button:hover {
-  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background on hover */
-}
 
 /* Style for the exit button */
 .exit-button {
@@ -231,3 +264,161 @@ nav a:hover {
   border-radius: 5px 5px 0 0; /* Rounded corners, except at the top */
   z-index: -1; /* Ensure it's behind the button and text */
 }
+/* end of the overlay content*/
+
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+/* beginning of the overlay content*/
+/* Style for the overlay */
+.overlay2 {
+  display: none; /* Initially hidden */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  z-index: 9999; /* Ensure overlay is above other content */
+  overflow-y: auto; /* Enable vertical scrolling */
+  transition: opacity 0.3s ease-in-out; /* Fade-in and fade-out transition */
+  opacity: 0; /* Start with opacity 0 */
+}
+
+.overlay2-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1000; /* Width of the overlay */
+  max-width: calc(100% - 40px); /* Maximum width for responsiveness */
+  overflow-y: auto; /* Enable vertical scrolling */
+  background-color: #222; /* Background color of the overlay */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Shadow effect */
+  padding: 20px; /* Add padding */
+  height: 100vh; /* Set height to viewport height */
+  max-height: calc(100vh - 100px); /* Set maximum height for scrolling */
+  opacity: 0; /* Start with opacity 0 */
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; /* Fade-in and slide-in transition */
+  transform-origin: center; /* Set transform origin to center */
+  transform: translate(-50%, -50%) scale(0.5); /* Start with small size */
+}
+.overlay2.active {
+  display: block; /* Show the overlay */
+  opacity: 1; /* Fade-in effect */
+}
+
+.overlay-content2.active {
+  opacity: 1; /* Fade-in effect */
+  transform: translate(-50%, -50%) scale(1); /* Expand to full size */
+}
+
+
+
+/* Style for the exit button */
+.exit-button2 {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  background-color: transparent; /* Transparent background */
+  border: none; /* No border */
+  color: white; /* White text color */
+  font-size: 24px; /* Font size increased */
+  line-height: 30px; /* Center the text vertically */
+  padding: 10px; /* Equal padding */
+  cursor: pointer; /* Cursor style */
+}
+
+.exit-button2:hover {
+  color: #ff5555; /* Change color on hover */
+}
+
+/* Style for the video container */
+.video-container2 {
+  position: relative;
+  width: 95%; /* Adjust the width as needed */
+  margin: 0 auto; /* Center the container horizontally */
+  padding-top: 50%; /* Aspect ratio (height: 9/16 * 100) */
+  top: 25px; /* Adjust the top position to move the frame down */
+  overflow: hidden;
+}
+
+.video-container2 iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Style for the video title */
+.video-title2 {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 35px;
+  padding: 10px 20px; /* Adds padding to the title */
+  background-color: #222; /* Dark background color */
+  color: white; /* White text color */
+  border-radius: 5px; /* Rounded corners */
+  width: fit-content; /* Adjusts width to fit content */
+  margin-left: 5px; /* Left margin */
+  margin-right: 40px; /* Right margin */
+  font-family: Verdana, Geneva, Tahoma, sans-serif, Arial; /* Default font style */
+}
+
+/* Style for the description container */
+.description-container2 {
+  position: relative;
+}
+
+/* Style for the description initially */
+.description2 {
+  margin: 20px auto; /* Add margin to center vertically and horizontally */
+  padding: 20px; /* Add padding for content */
+  background-color: #222; /* Dark background color */
+  color: white; /* Text color */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Shadow effect */
+  font-family: Arial, sans-serif; /* Font style */
+  width: 91%; /* Set width to 95% */
+  height: 100px; /* Initial height */
+  overflow: hidden; /* Hide overflow */
+  transition: height 0.3s; /* Add transition for smooth expansion/collapse */
+}
+
+/* Expanded style for the description */
+.description.expanded2 {
+  height: auto; /* Auto height for dynamic content */
+}
+
+/* Style for the "Read more" button */
+.read-more-btn2 {
+  position: absolute;
+  bottom: -30px; /* Adjust as needed */
+  left: 24px; /* Move the button 1px to the right */
+  background-color: #464646; /* Dark grey background color */
+  border: none;
+  color: white;
+  padding: 5px 10px; /* Adjust padding */
+  font-size: 14px; /* Adjust font size */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer;
+  z-index: 1; /* Ensure it's above the rectangle */
+}
+
+
+
+/* Style for the separate rectangle */
+.button-rectangle2 {
+  position: absolute;
+  bottom: -40px; /* Adjust as needed */
+  left: 0;
+  width: 100%; /* Same width as the description */
+  height: 40px; /* Height of the rectangle */
+  background-color: #222; /* Dark background color */
+  border-radius: 5px 5px 0 0; /* Rounded corners, except at the top */
+  z-index: -1; /* Ensure it's behind the button and text */
+}
+/* end of the overlay content*/
+/*------------------------------------------------------------------------------------------------------------------------*/
+

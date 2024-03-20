@@ -15,73 +15,87 @@
 <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About us</a>
-  <a href="another-example.html">Another Example</a>
+    <a href="another-example.html">Another Example</a>
 </nav>
 
 <!-- Blank Content Area -->
 <div class="content">
-  <!-- Button to open overlay -->
-  <div class="button-container">
-    <button onclick="openOverlay()">Open Overlay</button>
+  <div class="dropdown" id="Dropdown">
+    <button id="Dropdown-btn" class="dropdown-btn" onclick="toggleButtonContainer()">General Knowledge</button>
+    <!-- Button to open overlay -->
+    <div id="buttonContainer" class="button-container">
+      <button onclick="openOverlay()">Open Overlay</button>
+    </div>
   </div>
-</div>
 
-<!-- Overlay Container -->
-<div class="overlay" id="overlay">
-  <!-- Overlay content area -->
-  <div class="overlay-content">
-    <!-- Exit button -->
-    <button class="exit-button" onclick="closeOverlay()">x</button>
-    <!-- YouTube video -->
-    <div id="video-player1" class="video-container">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/6Uhgm-A8C3o?si=OfErzHqE8R-VwEqh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <!-- Additional dropdown buttons -->
+  <div class="dropdown" id="Dropdown2">
+    <button id="Dropdown-btn2" class="dropdown-btn" onclick="toggleButtonContainer2()">General Knowledge 2</button>
+    <!-- Button to open overlay -->
+    <div id="buttonContainer2" class="button-container">
+        <button onclick="openOverlay2()">Open Overlay 2</button>
     </div>
-    <div class="video-title">The Burger Bots - Official Trailer</div>
-    <!-- Description section -->
-    <div class="description-container">
-    <div class="description" id="description">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vehicula mauris id pulvinar. Integer nec lacus quis ex viverra scelerisque. Fusce nec dui vel justo tincidunt convallis. Sed fringilla sapien ut libero malesuada, vitae viverra mi tempus. Ut efficitur urna quis dui sollicitudin vestibulum. In hac habitasse platea dictumst.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vehicula mauris id pulvinar. Integer nec lacus quis ex viverra scelerisque. Fusce nec dui vel justo tincidunt convallis. Sed fringilla sapien ut libero malesuada, vitae viverra mi tempus. Ut efficitur urna quis dui sollicitudin vestibulum. In hac habitasse platea dictumst.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vehicula mauris id pulvinar. Integer nec lacus quis ex viverra scelerisque. Fusce nec dui vel justo tincidunt convallis. Sed fringilla sapien ut libero malesuada, vitae viverra mi tempus. Ut efficitur urna quis dui sollicitudin vestibulum. In hac habitasse platea dictumst.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vehicula mauris id pulvinar. Integer nec lacus quis ex viverra scelerisque. Fusce nec dui vel justo tincidunt convallis. Sed fringilla sapien ut libero malesuada, vitae viverra mi tempus. Ut efficitur urna quis dui sollicitudin vestibulum. In hac habitasse platea dictumst.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vehicula mauris id pulvinar. Integer nec lacus quis ex viverra scelerisque. Fusce nec dui vel justo tincidunt convallis. Sed fringilla sapien ut libero malesuada, vitae viverra mi tempus. Ut efficitur urna quis dui sollicitudin vestibulum. In hac habitasse platea dictumst.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vehicula mauris id pulvinar. Integer nec lacus quis ex viverra scelerisque. Fusce nec dui vel justo tincidunt convallis. Sed fringilla sapien ut libero malesuada, vitae viverra mi tempus. Ut efficitur urna quis dui sollicitudin vestibulum. In hac habitasse platea dictumst.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vehicula mauris id pulvinar. Integer nec lacus quis ex viverra scelerisque. Fusce nec dui vel justo tincidunt convallis. Sed fringilla sapien ut libero malesuada, vitae viverra mi tempus. Ut efficitur urna quis dui sollicitudin vestibulum. In hac habitasse platea dictumst.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vehicula mauris id pulvinar. Integer nec lacus quis ex viverra scelerisque. Fusce nec dui vel justo tincidunt convallis. Sed fringilla sapien ut libero malesuada, vitae viverra mi tempus. Ut efficitur urna quis dui sollicitudin vestibulum. In hac habitasse platea dictumst.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vehicula mauris id pulvinar. Integer nec lacus quis ex viverra scelerisque. Fusce nec dui vel justo tincidunt convallis. Sed fringilla sapien ut libero malesuada, vitae viverra mi tempus. Ut efficitur urna quis dui sollicitudin vestibulum. In hac habitasse platea dictumst.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vehicula mauris id pulvinar. Integer nec lacus quis ex viverra scelerisque. Fusce nec dui vel justo tincidunt convallis. Sed fringilla sapien ut libero malesuada, vitae viverra mi tempus. Ut efficitur urna quis dui sollicitudin vestibulum. In hac habitasse platea dictumst.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vehicula mauris id pulvinar. Integer nec lacus quis ex viverra scelerisque. Fusce nec dui vel justo tincidunt convallis. Sed fringilla sapien ut libero malesuada, vitae viverra mi tempus. Ut efficitur urna quis dui sollicitudin vestibulum. In hac habitasse platea dictumst.</p>
-
-      <!-- "Read more" button -->
-      <div id="showMoreBtn" class="read-more-btn" onclick="toggleDescription()">Read more</div>
-    </div>
-    <div class="button-rectangle"></div>
-    </div>
-    <div id="disqus_thread"></div>
-<script>
-    /**
-    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-    /*
-    var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
-    (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://theburgerbots.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
   </div>
+
+  
+
+  
+<!---------------------------------------------------------------------------------------------------------------------->
+<!-- beginning of the overlay -->
+  <!-- Overlay Container -->
+  <div class="overlay" id="overlay">
+    <!-- Overlay content area -->
+    <div class="overlay-content">
+      <!-- Exit button -->
+      <button class="exit-button" onclick="closeOverlay()">x</button>
+      <!-- YouTube video -->
+      <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/6Uhgm-A8C3o?si=OfErzHqE8R-VwEqh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <div class="video-title">The Burger Bots - Official Trailer</div>
+      <!-- Description section -->
+      <div class="description-container">
+        <div class="description" id="description">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vehicula mauris id pulvinar. Integer nec lacus quis ex viverra scelerisque. Fusce nec dui vel justo tincidunt convallis. Sed fringilla sapien ut libero malesuada, vitae viverra mi tempus. Ut efficitur urna quis dui sollicitudin vestibulum. In hac habitasse platea dictumst.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vehicula mauris id pulvinar. Integer nec lacus quis ex viverra scelerisque. Fusce nec dui vel justo tincidunt convallis. Sed fringilla sapien ut libero malesuada, vitae viverra mi tempus. Ut efficitur urna quis dui sollicitudin vestibulum. In hac habitasse platea dictumst.</p>
+          <!-- "Read more" button -->
+          <div id="showMoreBtn" class="read-more-btn" onclick="toggleDescription()">Read more</div>
+        </div>
+        <div class="button-rectangle"></div>
+      </div>
+      <div id="disqus_thread"></div>
+    </div>
+  </div>
+
+  <!-- Other Overlay Containers -->
+  <!-- Please replace the iframe source with your desired content for each overlay -->
+  <!-- Overlay 2 -->
+  <div class="overlay2" id="overlay2">
+    <div class="overlay-content2">
+      <button class="exit-button2" onclick="closeOverlay2()">x</button>
+      <div class="video-container2">
+        <iframe id="video-player2" width="560" height="315" src="https://www.youtube.com/embed/your-video-id2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <div class="video-title2">Your Video Title 2</div>
+      <div class="description-container2">
+        <div class="description2" id="description2">
+          <!-- Your content here -->
+        </div>
+        <div class="button-rectangle2"></div>
+      </div>
+      <div id="disqus_thread2"></div>
+    </div>
+  </div>
+
+ 
+
+
+  <!-- Repeat the structure for overlays 3 to 15 as needed -->
+
 </div>
 
 <script src="scripts/scripts.js"></script> <!-- Link to the JavaScript file -->
 <script src="https://www.youtube.com/iframe_api"></script>
-
 
 </body>
 </html>

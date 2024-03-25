@@ -14,9 +14,11 @@
 <!-- Navigation Menu -->
 <nav>
     <a href="index.html">Home</a>
-    <a href="about.html">About us</a>
+    <a>     </a>
     <a href="another-example.html">Another Example</a>
 </nav>
+
+
 
 <!-- Button to open overlay -->
 <div id="buttonContainer" class="button-container">
@@ -25,30 +27,38 @@
 
 <!-- Overlay Container -->
 <div class="overlay" id="overlay">
+  
+<!-- Sidebar with video buttons -->
+<div id="sidebar" class="sidebar">
+  <button id="button1" onclick="triggerFunctions()">Video 1</button>
+  <button id="button2" onclick="triggerFunctions()">Video 2</button>
+  <button id="button3" onclick="triggerFunctions()">Video 3</button>
+  <button id="button4" onclick="triggerFunctions()">Video 3</button>
+</div>
   <!-- Overlay content area -->
   <div class="overlay-content">
+    
     <!-- Exit button -->
     <button class="exit-button" onclick="closeOverlay()">x</button>
     <!-- YouTube video -->
     <div class="video-container">
       <iframe id="videoPlayer" width="560" height="315" src="https://www.youtube.com/embed/6Uhgm-A8C3o?si=OfErzHqE8R-VwEqh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-      <img id="changeVideoBtn" class="change-video-btn" src="images/menu.png" alt="Change Video" onclick="toggleSidebar()">
+      
     </div>
-    <!-- Sidebar with video buttons -->
-    <div id="sidebar" class="sidebar">
-      <button onclick="changeVideo('https://www.youtube.com/embed/6Uhgm-A8C3o?si=OfErzHqE8R-VwEqh')">Video 1</button>
-      <button onclick="changeVideo('https://www.youtube.com/embed/6Uhgm-A8C3o?si=OfErzHqE8R-VwEqh')">Video 2</button>
-      <button onclick="changeVideo('https://www.youtube.com/embed/6Uhgm-A8C3o?si=OfErzHqE8R-VwEqh')">Video 3</button>
-    </div>
-    <div class="video-title">The Burger Bots - Official Trailer</div>
+    
+    <svg id="changeVideoBtn" class="change-video-btn" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" onclick="toggleSidebar()">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+    </svg>
+    <div id="videoTitle" class="video-title">The Burger Bots - Official Trailer</div>
     <!-- Description section -->
     <div class="description-container">
       <div class="description" id="description">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vehicula mauris id pulvinar. Integer nec lacus quis ex viverra scelerisque. Fusce nec dui vel justo tincidunt convallis. Sed fringilla sapien ut libero malesuada, vitae viverra mi tempus. Ut efficitur urna quis dui sollicitudin vestibulum. In hac habitasse platea dictumst.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vehicula mauris id pulvinar. Integer nec lacus quis ex viverra scelerisque. Fusce nec dui vel justo tincidunt convallis. Sed fringilla sapien ut libero malesuada, vitae viverra mi tempus. Ut efficitur urna quis dui sollicitudin vestibulum. In hac habitasse platea dictumst.</p>
         <!-- "Read more" button -->
-        <div id="showMoreBtn" class="read-more-btn" onclick="toggleDescription()">Read more</div>
+        
       </div>
+      <div id="showMoreBtn" class="read-more-btn" onclick="toggleDescription()">Read more</div>
       <div class="button-rectangle"></div>
     </div>
     <div id="disqus_thread"></div>

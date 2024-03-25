@@ -70,7 +70,7 @@ nav a:hover {
   top: calc(12.98% + 0.08533px); /* Position below the dropdown */
   left: calc(50vh); /* Center horizontally */
   transform: translateX(-50%); /* Move back 50% of its own width */
-  width: calc(100vh); /* Set a fixed width or adjust as needed */
+  width: calc(50vh); /* Set a fixed width or adjust as needed */
   height: calc(75.01vh);
 }
 

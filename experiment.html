@@ -2,29 +2,32 @@
 <html>
 <head>
 <style> 
-div {
+.aniboxer {
   width: 100px;
   height: 100px;
-  background-color: red;
-  
+  position: relative;
+  background-color:red; left:0px; top:0px;
 }
-div:hover {
-    animation: example 2s ease-out; /* Apply the animation */
+
+.aniboxer.active {
+    animation-name: example;
+  animation-duration: 8s;
 }
 
 @keyframes example {
-  from {
-    left: -250px; /* Starting position */
-  }
-  to {
-    left: 0; /* Ending position */
-  }
+  0%   {width:20px; top:0px;}
+  100% {width:500px; top:0px;}
 }
-
 </style>
+<div id="Anibox" class="aniboxer"><button onclick="animationStart()">Click to Open</button></div>
 </head>
 <body>
-
+<script>
+   function animationStart() {
+    var sidebar = document.getElementById('Anibox');
+    sidebar.classList.toggle('active');
+  } 
+</script>
 <h1>CSS Animation</h1>
 
 <div></div>
@@ -33,3 +36,5 @@ div:hover {
 
 </body>
 </html>
+
+

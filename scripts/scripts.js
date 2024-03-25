@@ -13,8 +13,180 @@ function toggleSidebar() {
   function changeVideo(videoUrl) {
     var videoPlayer = document.getElementById('videoPlayer');
     videoPlayer.src = videoUrl;
-    document.getElementById('sidebar').classList.remove('active');
+    
   }
+  
+  function updateTitle(TitleText)
+  {
+    var Title = document.getElementById('videoTitle');
+    Title.textContent = TitleText;
+  }
+
+  function updateDescription(descText) {
+    // Get the <p> element by its ID
+    var paragraph = document.getElementById('description');
+    paragraph.style.whiteSpace = 'pre-wrap';
+    // Update the text content of the <p> element
+    paragraph.textContent = descText;
+  }
+  
+  function triggerFunctions()
+  {
+    var button1Clicked = false;
+    var button2Clicked = false;
+    var button3Clicked = false;
+    var button4Clicked = false;
+    var button5Clicked = false;
+    var button6clicked = false;
+    var button7clicked = false;
+    var buttonchooser1 = document.getElementById('button1');
+    var buttonchooser2 = document.getElementById('button2');
+    var buttonchooser3 = document.getElementById('button3');
+    var buttonchooser4 = document.getElementById('button4');
+    buttonchooser1.addEventListener('click', function() {
+      button1Clicked = true;
+      if(button1Clicked == true) 
+    {
+      updateTitle('Setting Up a FRC Wpilib Project');
+      changeVideo('https://www.youtube.com/embed/5TSDfkR9S-E?si=zozR51DarsTm2bTx');
+      updateDescription('testing works for button #1');
+    }
+    else if(button2Clicked == true)
+    {
+      updateTitle('Title #2');
+      changeVideo('https://www.youtube.com/embed/6Uhgm-A8C3o?si=OfErzHqE8R-VwEqh');
+      updateDescription('testing works for button #2');
+    }
+    else if(button3Clicked == true)
+    {
+      updateTitle('Title #3');
+      changeVideo('https://www.youtube.com/embed/6Uhgm-A8C3o?si=OfErzHqE8R-VwEqh')
+      updateDescription('testing works for button #3');
+    }
+    else if(button4Clicked == true)
+    {
+      updateTitle('Title #4');
+      changeVideo('https://www.youtube.com/embed/6Uhgm-A8C3o?si=OfErzHqE8R-VwEqh')
+      updateDescription('testing works for button #4');
+    }
+    else
+    {
+      var keepDescSame = document.getElementById('description');
+      var originalDescText = keepDescSame.textContent;
+      keepDescSame.textContent = originalDescText;
+    }
+    });
+    buttonchooser2.addEventListener('click', function() {
+      button2Clicked = true;
+      if(button1Clicked == true) 
+    {
+      updateTitle('Title #1');
+      changeVideo('https://www.youtube.com/embed/6Uhgm-A8C3o?si=OfErzHqE8R-VwEqh');
+      updateDescription('testing works for button #1');
+    }
+    else if(button2Clicked == true)
+    {
+      updateTitle('Title #2');
+      changeVideo('https://www.youtube.com/embed/6Uhgm-A8C3o?si=OfErzHqE8R-VwEqh');
+      updateDescription('testing works for button #2');
+    }
+    else if(button3Clicked == true)
+    {
+      updateTitle('Title #3');
+      changeVideo('https://www.youtube.com/embed/6Uhgm-A8C3o?si=OfErzHqE8R-VwEqh')
+      updateDescription('testing works for button #3');
+    }
+    else if(button4Clicked == true)
+    {
+      updateTitle('Title4');
+      changeVideo('https://www.youtube.com/embed/6Uhgm-A8C3o?si=OfErzHqE8R-VwEqh')
+      updateDescription('testing works for button #4');
+    }
+    else
+    {
+      var keepDescSame = document.getElementById('description');
+      var originalDescText = keepDescSame.textContent;
+      keepDescSame.textContent = originalDescText;
+
+      var keepVideoSame = document.getElementById('videoPlayer');
+      var originalVideo = keepVideoSame.src;
+      keepVideoSame.src = originalVideo;
+
+      var keepTitleSame = document.getElementById('videoTitle');
+      var originalTitleText = keepTitleSame.textContent;
+      keepTitleSame.textContent = originalTitleText;
+    }
+    });
+    buttonchooser3.addEventListener('click', function() {
+      button3Clicked = true;
+      if(button1Clicked == true) 
+    {
+      updateTitle('Title #1');
+      changeVideo('https://www.youtube.com/embed/6Uhgm-A8C3o?si=OfErzHqE8R-VwEqh');
+      updateDescription('testing works for button #1');
+    }
+    else if(button2Clicked == true)
+    {
+      updateTitle('Title #2');
+      changeVideo('https://www.youtube.com/embed/6Uhgm-A8C3o?si=OfErzHqE8R-VwEqh');
+      updateDescription('testing works for button #2');
+    }
+    else if(button3Clicked == true)
+    {
+      updateTitle('Title #3');
+      changeVideo('https://www.youtube.com/embed/6Uhgm-A8C3o?si=OfErzHqE8R-VwEqh')
+      updateDescription('testing works for button #3');
+    }
+    else if(button4Clicked == true)
+    {
+      updateTitle('Title #4');
+      changeVideo('https://www.youtube.com/embed/6Uhgm-A8C3o?si=OfErzHqE8R-VwEqh')
+      updateDescription('testing works for button #4');
+    }
+    else
+    {
+      var keepDescSame = document.getElementById('description');
+      var originalDescText = keepDescSame.textContent;
+      keepDescSame.textContent = originalDescText;
+    }
+    });
+    buttonchooser4.addEventListener('click', function() {
+      button4Clicked = true;
+      if(button1Clicked == true) 
+    {
+      updateTitle('Title #1');
+      changeVideo('https://www.youtube.com/embed/6Uhgm-A8C3o?si=OfErzHqE8R-VwEqh');
+      updateDescription('testing works for button #1');
+    }
+    else if(button2Clicked == true)
+    {
+      updateTitle('Title #2');
+      changeVideo('https://www.youtube.com/embed/6Uhgm-A8C3o?si=OfErzHqE8R-VwEqh');
+      updateDescription('testing works for button #2');
+    }
+    else if(button3Clicked == true)
+    {
+      updateTitle('Title #3');
+      changeVideo('https://www.youtube.com/embed/6Uhgm-A8C3o?si=OfErzHqE8R-VwEqh')
+      updateDescription('testing works for button #3');
+    }
+    else if(button4Clicked == true)
+    {
+      updateTitle('Title #4');
+      changeVideo('https://www.youtube.com/embed/6Uhgm-A8C3o?si=OfErzHqE8R-VwEqh')
+      updateDescription('testing works for button #4');
+    }
+    else
+    {
+      var keepDescSame = document.getElementById('description');
+      var originalDescText = keepDescSame.textContent;
+      keepDescSame.textContent = originalDescText;
+    }
+    });
+
+    
+  }
+
   
   // Function to open the overlay (you can add your existing function here)
   function openOverlay() {

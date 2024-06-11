@@ -67,11 +67,11 @@ nav a:hover {
 /* Style for the button container */
 .button-container {
   position: absolute;
-  top: calc(12.98% + 0.08533px); /* Position below the dropdown */
-  left: calc(50vh); /* Center horizontally */
+  top: calc(100vh / 7); /* Position below the dropdown */
+  left: calc(100vh); /* Center horizontally */
   transform: translateX(-50%); /* Move back 50% of its own width */
-  width: calc(50vh); /* Set a fixed width or adjust as needed */
-  height: calc(75.01vh);
+  width: calc(100%); /* Set a fixed width or adjust as needed */
+  height: calc(85.5%);
 }
 
 .discord-link{
@@ -95,12 +95,12 @@ nav a:hover {
   padding: 14px 20px; /* Padding */
   font-size: 16px; /* Font size */
   cursor: pointer; /* Cursor style */
-  height: calc(114.0001%);
-  width: calc(201.5%);
+  height: calc(100%);
+  width: calc(100%);
 }
 
 .button-container button:hover {
-  background-color: rgba(253, 251, 251, 0.034); /* Semi-transparent white background on hover */
+  background-color: rgba(253, 251, 251, 0); /* Semi-transparent white background on hover */
 }
 
 
